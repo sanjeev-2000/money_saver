@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/aclonica</item>
+        <item>@font/alfa_slab_one</item>
+        <item>@font/allura</item>
+        <item>@font/bangers</item>
+        <item>@font/exo_2_extrabold</item>
+        <item>@font/fascinate</item>
+        <item>@font/luckiest_guy</item>
+        <item>@font/seymour_one</item>
+    </array>
+</resources>

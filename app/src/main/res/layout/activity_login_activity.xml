@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/login_bg"
+    android:weightSum="5"
+    android:layout_height="match_parent"
+    tools:context=".login_activity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_margin="7dp"
+        android:fontFamily="cursive"
+        android:text="Login"
+        android:textColor="#ffffff"
+        android:textSize="50sp"
+        android:textStyle="bold">
+
+    </TextView>
+    <com.airbnb.lottie.LottieAnimationView
+    android:id="@+id/animationView"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:paddingRight="10dp"
+        android:layout_marginTop="70dp"
+    android:scaleType="fitCenter"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    app:lottie_fileName="login_screen_anim.json"
+    app:lottie_autoPlay="true"
+    app:lottie_loop="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/hi"
+        android:layout_marginTop="160dp"
+        android:layout_below="@id/animationView">
+
+        <EditText
+            android:id="@+id/email_login"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/exo_2_extrabold"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textColorHint="#032453"
+            android:textSize="24sp">
+
+        </EditText>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hi"
+        android:id="@+id/hi2"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:id="@+id/pass_login"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/exo_2_extrabold"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColorHint="#032453"
+            android:textSize="24dp">
+
+        </EditText>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/hi3"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/hi2">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/login_btn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:paddingRight="10dp"
+            android:scaleType="fitCenter"
+            android:background="@drawable/btn_circle"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            app:lottie_fileName="enter_anim2.json"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/hi3"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="cursive"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:text="Not Registered? Sign up!">
+
+        </TextView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp">
+
+
+        <ProgressBar
+            android:id="@+id/progressBar_login"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+</RelativeLayout>

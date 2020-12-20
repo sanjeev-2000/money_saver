@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".currency_converter">
+
+    <include layout="@layout/tool_bar"></include>
+
+    <com.luseen.spacenavigation.SpaceNavigationView
+        android:id="@+id/space"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        app:active_item_color="#ffffff"
+        app:centre_button_color="#ffffff"
+        app:inactive_item_color="@color/white"
+        app:space_background_color="@color/colorPrimary"
+        app:centre_button_icon="@drawable/home_icon"
+        app:space_item_icon_size="25dp"
+        app:space_item_icon_only_size="@dimen/space_item_icon_only_size"
+        app:space_item_text_size="@dimen/space_item_text_default_size" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="60dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/tv_from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/exo_2_extrabold"
+                android:layout_marginLeft="30dp"
+                android:text="From:"
+                android:textSize="28sp"/>
+
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="fill_parent"
+                android:layout_marginRight="20dp"
+                android:layout_height="38dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/border"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/tv_to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:fontFamily="@font/exo_2_extrabold"
+                android:text="To:      "
+                android:textSize="28sp"/>
+
+            <Spinner
+                android:id="@+id/spinner2"
+                android:layout_width="fill_parent"
+                android:layout_marginRight="20dp"
+                android:layout_height="38dp"
+                android:background="@drawable/border"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp">
+
+            <EditText
+                android:id="@+id/editText_amt"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:ems="10"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:paddingLeft="5dp"
+                android:background="@drawable/border"
+                android:layout_gravity="center"
+                android:inputType="numberDecimal"
+                android:hint="Amount" />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/convert"
+                android:layout_width="177dp"
+                android:layout_height="51dp"
+                android:fontFamily="@font/exo_2_extrabold"
+                android:layout_centerInParent="true"
+                android:text="CONVERT" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:fontFamily="@font/exo_2_extrabold"
+                android:text="ANSWER:"
+                android:textSize="28sp"/>
+
+            <TextView
+                android:id="@+id/tv_answer"
+                android:fontFamily="@font/exo_2_extrabold"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:textColor="#79A85B"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:textSize="23sp"/>
+
+
+        </LinearLayout>
+        
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1095142131206",
+    "firebase_url": "https://money-saver-c1152.firebaseio.com",
+    "project_id": "money-saver-c1152",
+    "storage_bucket": "money-saver-c1152.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1095142131206:android:7dda7c2156f681d4882587",
+        "android_client_info": {
+          "package_name": "com.example.money_saver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1095142131206-t71pvlod2vejknkq92caas5bmkboj6b1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.money_saver",
+            "certificate_hash": "db56b1d74f801d90eb7d56c5a71e12b7ae3cb4ff"
+          }
+        },
+        {
+          "client_id": "1095142131206-vibtg593l6brfimjh9v8r4ghadbrjd2b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjGpj4O8MNCM0GdHg6bBqoLz-d3j1yTUI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1095142131206-vibtg593l6brfimjh9v8r4ghadbrjd2b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

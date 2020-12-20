@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@android:style/Theme.Dialog"
+    android:orientation="vertical"
+    android:background="#FDF1B4">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/bangers"
+            android:text="WELCOME"
+            android:textColor="#000000"
+            android:textSize="80dp"></TextView>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Salary:"
+            android:paddingLeft="10dp"
+            android:layout_gravity="center"
+            android:textSize="28dp"></TextView>
+
+        <EditText
+            android:id="@+id/tv1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="Enter Income"
+            android:inputType="number"
+            android:textSize="24dp">
+
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Savings:"
+            android:paddingLeft="10dp"
+            android:layout_gravity="center"
+            android:textSize="28dp"></TextView>
+
+        <EditText
+            android:id="@+id/tv2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="Amount to Save"
+            android:inputType="number"
+            android:textSize="24dp">
+
+        </EditText>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/save_salary"
+            android:layout_width="113dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="SAVE"></Button>
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

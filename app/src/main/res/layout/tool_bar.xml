@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HOME"
+            android:layout_centerVertical="true"
+            android:id="@+id/activity_label"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:paddingLeft="10dp">
+
+        </TextView>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animationView_activity"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="house.json"
+            app:lottie_loop="true"
+            android:layout_width="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="47dp"
+            android:layout_centerVertical="true"
+            android:paddingRight="10dp" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logout_icon"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/logout_home"
+            android:paddingRight="15dp">
+
+        </ImageView>
+
+    </RelativeLayout>
+
+</RelativeLayout>
